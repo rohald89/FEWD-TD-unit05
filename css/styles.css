@@ -6,7 +6,6 @@
 
 .wrapper {
   max-width: 1200px;
-  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -15,16 +14,18 @@
 }
 
 input {
-  width: 480px;
+  margin-top: 200px;
+  width: 80%;
   padding: 12px;
   border: 1px solid lightgrey;
   border-radius: 5px;
-  color: pink;
+  color: darkgrey;
+  font-size: 1rem;
 }
 
 ::placeholder {
   color: grey;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .gallery {
@@ -36,4 +37,10 @@ input {
 
 img {
   margin: 30px;
+}
+
+@media (min-width: 768px) {
+  input {
+    width: 480px;
+  }
 }
